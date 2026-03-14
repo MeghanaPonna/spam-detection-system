@@ -174,7 +174,7 @@ import pickle
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Load model
-model = tf.keras.models.load_model("model/spam_model.h5")
+model = tf.keras.models.load_model("model/spam_model.h5",compile=False)
 
 # Load tokenizer
 with open("model/tokenizer.pkl", "rb") as f:
