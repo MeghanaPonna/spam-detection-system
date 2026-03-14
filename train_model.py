@@ -46,7 +46,8 @@ model.compile(
 )
 
 # Train
-model.fit(X_train_pad, y_train, epochs=5)
+# model.fit(X_train_pad, y_train, epochs=5)
+model.fit(X_train_pad, y_train, epochs=10)
 
 # Evaluate
 loss, accuracy = model.evaluate(X_test_pad, y_test)
