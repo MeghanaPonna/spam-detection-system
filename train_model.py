@@ -129,7 +129,7 @@ loss, accuracy = model.evaluate(X_test_pad, y_test)
 print("Accuracy:", accuracy)
 
 # Save model
-model.save("model/spam_model.h5")
+model.save("model/spam_model.keras")
 
 # Save tokenizer
 with open("model/tokenizer.pkl", "wb") as f:

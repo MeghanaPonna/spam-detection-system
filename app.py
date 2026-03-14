@@ -246,6 +246,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 # -------- LOAD MODEL --------
 
 model = tf.keras.models.load_model("model/spam_model.keras", compile=False)
+# model.save("model/spam_model.keras")
 
 # -------- LOAD TOKENIZER --------
 
